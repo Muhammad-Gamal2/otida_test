@@ -15,12 +15,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return RepositoryProvider<PostRepository>(
       create: (context) => PostRepository(),
-      child: MaterialApp(
+      child: const MaterialApp(
         title: 'Otida Test',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: const PostsPage(),
+        home: PostsPage(),
       ),
     );
   }
